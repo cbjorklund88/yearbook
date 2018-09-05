@@ -1,5 +1,9 @@
+*{
+  box-sizing: border-box;
+}
+
 html {
-  background: #0025FF;
+  background: #fae0e7;
   color: #fff;
 }
 
@@ -7,16 +11,77 @@ header {
   padding: 20px;
 }
 
+
+@keyframes example {
+    0% {background-color: #white;}
+    25% {background-color: #002ff5;}
+    50% {background-color: #eb4936}
+    100% {background-color: #de9535;}
+}
+
 .logo {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   display: inline-block;
   width: 200px;
   height: 200px;
-  border-radius: 100%;
-  background: #fff;
+  border-radius: 30%;
+  background-color: white;
+  margin-bottom: 30px;
+  animation-name: example;
+  animation-duration: 5s;
 }
 
 .logo img {
-  width: 140px;
+  width: 160px;
   margin-top: 55px;
+}
+
+
+.yearbook{
+  text-align: right;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.image{
+  float: left;
+  padding: 15px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  height: 450px;
+}
+
+.image img{
+  height: auto;
+  width: 270px;
+
+}
+
+.text{
+  color: #002ff5;
+  text-align: center;
+  font-family: 'Permanent Marker';
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
+.footer{
+  clear: both;
+  background-color: white;
+  width: 100%;
+  height: 20%;
+}
+
+.info{
+  font-family: 'Permanent Marker';
+  font-size: 20px;
+  color: black;
+  text-align: center;
 }
